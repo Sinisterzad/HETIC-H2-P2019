@@ -1,0 +1,8 @@
+{
+  "name": "my-amd-demo-package",
+  "version": "1.0.0",
+  "devDependencies": {
+    "requirejs": "^2.2.0",
+    "webpack": "^1.13.0"
+  }
+}

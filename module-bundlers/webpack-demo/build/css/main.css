@@ -1,0 +1,8 @@
+.hello {
+  color: #008000;
+  width: calc(100% - 30px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}

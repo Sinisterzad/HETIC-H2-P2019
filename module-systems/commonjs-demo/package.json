@@ -1,0 +1,7 @@
+{
+  "name": "my-amd-demo-package",
+  "version": "1.0.0",
+  "devDependencies": {
+    "webpack": "^1.13.0"
+  }
+}
