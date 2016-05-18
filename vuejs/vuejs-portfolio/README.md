@@ -1,6 +1,6 @@
-# portfolio
+# Vue.js Portfolio
 
-> A Vue.js project
+Online example: http://devserver.me/vuejs-portfolio/
 
 ## Build Setup
 
@@ -13,12 +13,13 @@ npm run dev
 
 # build for production with minification
 npm run build
+
+# deploy to an FTP server (npm build + gulp task)
+npm run deploy
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## Vue.js plugins
 
-
-# Vue.js plugins
 - https://github.com/vuejs/vue-cli
 - https://github.com/vuejs/vue-syntax-highlight
 - https://github.com/vuejs/vue-loader
