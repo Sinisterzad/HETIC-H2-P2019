@@ -23,9 +23,8 @@
           <div class="project-content-item__text" v-if="projectDetail.title || projectDetail.subtitle">
             <div>
               <h4 class="project-content-item__title" v-if="projectDetail.title">{{ projectDetail.title }}</h4>
-              <h5 class="project-content-item__subtitle" v-if="projectDetail.subtitle">{{ projectDetail.subtitle }}</h5>
+              <p class="project-content-item__description" v-if="projectDetail.description">{{ projectDetail.description }}</p>
             </div>
-            <p class="project-content-item__description">{{ projectDetail.description }}</p>
           </div>
           <div class="project-content-item__thumb lazyload" data-expand="-100" v-for="thumb of projectDetail.thumbnails">
             <img class="lazyload" :data-src="imgDetailSrc(thumb)" :alt="thumb">

@@ -30,12 +30,12 @@
     "details": [
       {
         "title": "Visualisation cartographique",
-        "subtitle": "La version cartographique de DataFrance permet de visualiser des données sur l'ensemble de la France à différents niveaux d'échelle : par région, département, commune, ou encore par quartier selon la précision des données fournies par les producteurs.",
+        "description": "La version cartographique de DataFrance permet de visualiser des données sur l'ensemble de la France à différents niveaux d'échelle : par région, département, commune, ou encore par quartier selon la précision des données fournies par les producteurs.",
         "thumbnails": ["datafrance-1.jpg"]
       },
       {
         "title": "Fiche commune",
-        "subtitle": "Les fiches communes DataFrance permettent de visualiser de nombreuses données associées à une commune sous forme graphique et cartographique.",
+        "description": "Les fiches communes DataFrance permettent de visualiser de nombreuses données associées à une commune sous forme graphique et cartographique.",
         "thumbnails": ["datafrance-2.jpg", "datafrance-3.jpg"]
       }
     ]
