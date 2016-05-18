@@ -1,0 +1,32 @@
+@import '~css/variables'
+
+.project-list-item
+  overflow hidden
+  height 300px
+  background-size cover
+  background-position 50%
+  cursor pointer
+  &:not(:last-of-type)
+    margin-bottom 20px
+
+.project-list-item-wrap
+  display block
+  height 100%
+  position relative
+
+.project-list-item__infos
+  position absolute
+  top 0
+  left 0
+  padding 26px 30px
+  box-sizing border-box
+  font-size 1em
+  width 500px
+  max-width 100%
+
+.project-list-item__title
+  font-size 1.6em
+  font-weight $bold
+
+.project-list-item__description
+  margin-top 10px

@@ -1,0 +1,100 @@
+{
+
+  "livestorm": {
+    "title": "Livestorm",
+    "subtitle": "Give smarter webinars. Get better leads.",
+    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
+    "cover": "livestorm.jpg",
+    "colors": {
+      "background": "#092f47",
+      "text": "#ffffff"
+    },
+    "url": "https://livestorm.co",
+    "details": [
+      {
+        "thumbnails": ["livestorm-1.jpg"]
+      }
+    ]
+  },
+
+  "datafrance": {
+    "title": "DataFrance",
+    "subtitle": "Datavisualisation",
+    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+    "cover": "datafrance.jpg",
+    "colors": {
+      "background": "#266ec9",
+      "text": "#ffffff"
+    },
+    "url": "http://datafrance.info",
+    "details": [
+      {
+        "title": "Visualisation cartographique",
+        "subtitle": "La version cartographique de DataFrance permet de visualiser des données sur l'ensemble de la France à différents niveaux d'échelle : par région, département, commune, ou encore par quartier selon la précision des données fournies par les producteurs.",
+        "thumbnails": ["datafrance-1.jpg"]
+      },
+      {
+        "title": "Fiche commune",
+        "subtitle": "Les fiches communes DataFrance permettent de visualiser de nombreuses données associées à une commune sous forme graphique et cartographique.",
+        "thumbnails": ["datafrance-2.jpg", "datafrance-3.jpg"]
+      }
+    ]
+  },
+
+  "dataparis": {
+    "title": "DataParis",
+    "subtitle": "Datavisualisation",
+    "description": "Des données sur Paris et les Parisiens localisées par le biais du réseau métropolitain.",
+    "cover": "dataparis.jpg",
+    "colors": {
+      "background": "#f2f2f2",
+      "text": "#222222"
+    },
+    "url": "http://dataparis.io",
+    "details": [
+      {
+        "thumbnails": ["dataparis-1.jpg", "dataparis-2.jpg"]
+      }
+    ]
+  },
+
+  "particles-js": {
+    "title": "Particles.js",
+    "subtitle": "A lightweight JavaScript library for creating particles",
+    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+    "cover": "particlesjs.jpg",
+    "colors": {
+      "background": "#b9151c",
+      "text": "#ffffff"
+    },
+    "url": "http://vincentgarreau.com/particles.js",
+    "details": [
+      {
+        "thumbnails": ["particlesjs-1.jpg"]
+      }
+    ]
+  },
+
+  "vendee-globe-3d": {
+    "title": "Vendée Globe Live Timing 3D",
+    "subtitle": "WebGL",
+    "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
+    "cover": "vendeeglobe3d.jpg",
+    "colors": {
+      "background": "#173f89",
+      "text": "#ffffff"
+    },
+    "url": "http://devserver.me/vendeeglobe3d",
+    "details": [
+      {
+        "title": "Changement climatique en temps réel",
+        "thumbnails": ["vendeeglobe3d-2.jpg", "vendeeglobe3d-3.jpg"]
+      },
+      {
+        "title": "Visualisation cartographique",
+        "thumbnails": ["vendeeglobe3d-1.jpg"]
+      }
+    ]
+  }
+
+}

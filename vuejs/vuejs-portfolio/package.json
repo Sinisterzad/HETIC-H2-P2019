@@ -1,0 +1,50 @@
+{
+  "name": "vuejs-portfolio",
+  "description": "Vue.js portfolio",
+  "author": "Vincent Garreau",
+  "private": true,
+  "scripts": {
+    "dev": "webpack-dev-server --inline --hot",
+    "build": "rm -rf dist/* && cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "deploy": "npm run build && gulp deploy"
+  },
+  "dependencies": {
+    "animate.css": "^3.5.1",
+    "babel-runtime": "^6.0.0",
+    "jquery": "^2.2.3",
+    "lazysizes": "^2.0.0-rc2",
+    "lodash": "^4.12.0",
+    "normalize.css": "^4.1.1",
+    "vue": "^1.0.0",
+    "vue-router": "^0.7.13"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-plugin-transform-runtime": "^6.0.0",
+    "babel-preset-es2015": "^6.0.0",
+    "babel-preset-stage-2": "^6.0.0",
+    "cross-env": "^1.0.6",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.10.1",
+    "eslint-config-airbnb-base": "^3.0.1",
+    "eslint-import-resolver-webpack": "^0.2.4",
+    "eslint-plugin-html": "^1.1.0",
+    "eslint-plugin-import": "^1.8.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.4",
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.7",
+    "html-webpack-plugin": "^2.17.0",
+    "json-loader": "^0.5.4",
+    "stylus-loader": "^2.0.0",
+    "url-loader": "^0.5.7",
+    "vinyl-ftp": "^0.4.5",
+    "vue-hot-reload-api": "^1.2.0",
+    "vue-html-loader": "^1.0.0",
+    "vue-loader": "^8.2.1",
+    "vue-style-loader": "^1.0.0",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.0"
+  }
+}
