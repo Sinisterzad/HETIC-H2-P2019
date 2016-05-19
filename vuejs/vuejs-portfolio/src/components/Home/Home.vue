@@ -49,7 +49,8 @@ export default {
 
     this.getGravatarProfile()
     .then(response => {
-      this.gravatarProfile = response
+      console.log(response)
+      // this.gravatarProfile = response
     })
     .catch(response => {
       console.error('Error request - Gravatar', response)
