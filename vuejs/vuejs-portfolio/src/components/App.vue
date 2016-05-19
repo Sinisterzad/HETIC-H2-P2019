@@ -11,7 +11,7 @@
     </header>
 
     <!-- main view -->
-    <router-view
+    <router-view keep-alive
       class="app-router animated"
       transition="fade" transition-mode="out-in">
     </router-view>

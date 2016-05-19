@@ -7,6 +7,7 @@
       <div class="wrapper">
         <h2 class="home-subtitle">À propos</h2>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>
+        <img v-if="gravatarProfile" class="home-about__picture" :src="`${gravatarProfile.thumbnailUrl}?s=160`" alt="">
         <ul class="home-about__links">
           <li><a target="_blank" href="http://linkedin.com/in/garreauvincent">LinkedIn</a></li>
           <li><a target="_blank" href="http://www.twitter.com/VincentGarreau">Twitter</a></li>
@@ -38,9 +39,57 @@ export default {
 
   data() {
     return {
-      projects
+      projects,
+      email: 'vin.garreau@gmail.com',
+      gravatarProfile: null
     }
+  },
+
+  ready() {
+
+    this.getGravatarProfile()
+    .then(response => {
+      this.gravatarProfile = response
+    })
+    .catch(response => {
+      console.error('Error request - Gravatar', response)
+    })
+
+  },
+
+  methods: {
+
+    getGravatarProfile() {
+
+      return new Promise((resolve, reject) => {
+
+        // Avec vue-resource
+        this.$http.jsonp(`https://www.gravatar.com/${md5(this.email)}.json`).then(response => {
+          if (response.data.entry) resolve(response.data.entry[0])
+          else reject(response.data)
+        }, response => {
+          reject(response.data)
+        })
+
+        // Avec jQuery
+        // $.ajax({
+        //   url: `https://www.gravatar.com/${md5(this.email)}.json`,
+        //   dataType: 'jsonp',
+        //   success(data) {
+        //     if (data.entry) resolve(data.entry[0])
+        //     else reject(data)
+        //   },
+        //   error(data) {
+        //     reject(data)
+        //   }
+        // })
+
+      })
+
+    }
+
   }
+
 
 }
 

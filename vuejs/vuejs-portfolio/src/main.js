@@ -2,12 +2,13 @@
 import Vue from 'vue'
 
 // On importe d'éventuelles librairies
-import $ from 'jquery'
+window.$ = require('jquery')
 import 'lodash'
 import 'lazysizes'
 
 // On importe d'éventuelles librairies Vue
 import VueRouter from 'vue-router'
+import VueResource from 'vue-resource'
 
 // On importe les composants nécessaires pour le router
 import App from './components/App.vue'
@@ -16,6 +17,7 @@ import Project from './components/Project/Project.vue'
 
 // On indique à Vue d'utiliser d'éventuelles librairies
 Vue.use(VueRouter)
+Vue.use(VueResource)
 
 // On créé le router
 const router = new VueRouter({
@@ -40,7 +42,7 @@ router.redirect({
 })
 
 // On redirige vers le haut de la page à chaque changement de page
-router.afterEach((transition) => {
+router.afterEach(() => {
   $('html, body').animate({ scrollTop: 0 }, 400)
 })
 

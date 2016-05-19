@@ -57,6 +57,11 @@ module.exports = {
       template: 'index.html',
       inject: true,
       favicon: './src/assets/images/favicon.png'
+    }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      md5: 'blueimp-md5'
     })
   ],
   devServer: {
@@ -77,7 +82,8 @@ if (process.env.NODE_ENV === 'production') {
     }),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
-        warnings: false
+        warnings: false,
+        drop_console: true
       }
     }),
     new webpack.optimize.OccurenceOrderPlugin(),
