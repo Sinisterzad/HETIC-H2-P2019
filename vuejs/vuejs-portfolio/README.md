@@ -1,6 +1,6 @@
 # Vue.js Portfolio
 
-Online example: http://devserver.me/vuejs-portfolio/
+Online example: http://vincentgarreau.com/vuejs-portfolio/
 
 ## Build Setup
 
